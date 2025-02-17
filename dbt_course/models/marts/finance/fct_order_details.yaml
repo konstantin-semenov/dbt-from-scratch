@@ -1,0 +1,11 @@
+models:
+  - name: fct_order_details
+    description: |
+      This is our description
+    columns:
+      - name: product_id
+      - name: product_name
+      - name: employee_id
+      - name: first_name
+      - name: last_name
+      - name: total_orders
