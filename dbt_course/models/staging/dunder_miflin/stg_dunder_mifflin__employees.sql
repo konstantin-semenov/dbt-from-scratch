@@ -5,7 +5,7 @@ with source as (
 renamed as (
     select
         employee_id,
-        first_name || ' ' || last_name as full_name,
+        {{ generate_full_name(first_name, last_name) }} as full_name,
         first_name,
         last_name,
         middle_name,

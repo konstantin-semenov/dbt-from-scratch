@@ -1,0 +1,47 @@
+models:
+  - name: stg_dunder_mifflin__products
+    description: ""
+    columns:
+      - name: product_id
+        data_type: number
+        description: ""
+
+      - name: product_name
+        data_type: varchar
+        description: ""
+
+      - name: product_description
+        data_type: varchar
+        description: ""
+
+      - name: supplier_id
+        data_type: number
+        description: ""
+
+      - name: category_id
+        data_type: number
+        description: ""
+
+      - name: quantity_per_unit
+        data_type: varchar
+        description: ""
+
+      - name: unit_price
+        data_type: number
+        description: ""
+
+      - name: units_in_stock
+        data_type: number
+        description: ""
+
+      - name: units_on_order
+        data_type: number
+        description: ""
+
+      - name: reorder_level
+        data_type: number
+        description: ""
+
+      - name: discontinued
+        data_type: boolean
+        description: ""

@@ -22,3 +22,6 @@ renamed as (
 )
 
 select * from renamed
+{% if var("limit_query", 1) != 1 %}
+limit {{ var("limit_query", 500) }}
+{% endif %}

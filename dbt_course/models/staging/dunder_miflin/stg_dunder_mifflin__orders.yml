@@ -4,7 +4,12 @@ models:
       This model contains order data from Dunder Mifflin's sales system.
 
       If you need information about products sold, refer to `order_details` model.
-
+    data_tests:
+      - dbt_utils.expression_is_true:
+          expression: "shipped_date > required_date"
+          config:
+            where: "ship_region = 'PA'"
+            severity: warn
     columns:
       - name: order_id
         description: "Unique identifier for each order."
