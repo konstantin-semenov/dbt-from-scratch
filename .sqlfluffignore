@@ -2,4 +2,4 @@ analysis/
 macros/
 dbt_packages/
 target/
-.github/profiles.yml
+profiles.yml
