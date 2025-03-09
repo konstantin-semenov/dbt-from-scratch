@@ -4,6 +4,8 @@ on:
   pull_request:
     types: [opened, synchronize, ready_for_review]
 
+  workflow_dispatch: # This event allows you to run the workflow manually
+
 permissions:
   contents: read
 
@@ -37,7 +39,7 @@ jobs:
         run: mkdir ~/.dbt && cp .github/profiles.yml ~/.dbt/profiles.yml
 
       - name: Lint SQL files
-        run: sqlfluff lint
+        run: sqlfluff lint models
 
       - name: Create dbt seeds
         working-directory: ./dbt_course
